@@ -1,0 +1,665 @@
+@font-face {
+    font-family: metropolis_regular;
+    src: url(../fonts/Metropolis/Metropolis-Regular.otf)
+  }
+  @font-face {
+    font-family: metropolis_medium;
+    src: url(../fonts/Metropolis/Metropolis-Medium.otf)
+  }
+  @font-face {
+    font-family: metropolis_bold;
+    src: url(../fonts/Metropolis/Metropolis-Bold.otf)
+  }
+*{
+    padding:0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    min-height: 100%;
+    background-color: white;
+    font-size: 15px;
+    font-family: metropolis_regular;
+}
+.main{
+    width:100%;
+    min-height: 100vh;
+    padding:50px 10px 10px;
+    position:relative;
+}
+/*==========================================
+          Splash Screen Starts Here
+===========================================*/
+.splash_main{
+    width:100%;
+    height:100vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background: url("splash.jpg")  no-repeat center;
+    background-size: cover; */
+    background-image:
+    linear-gradient(to bottom, rgba(221, 132, 213, 0.02), rgba(0,0, 0, 1)),
+    url('../img/splash_5.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding:60px;
+}
+.company_logo{
+    position:absolute;
+    bottom:50vh;
+    width:50%;
+    height:100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; 
+}
+.company_logo img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+
+}
+.title{
+    position:absolute;
+    bottom:35vh;
+    width:90%;
+    height:50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.title p{
+     font-size: 24px;
+     font-weight:bold;
+     font-family: metropolis_bold;
+     color:#edf6f9;
+}
+.subtitle{
+    position:absolute;
+    bottom:25vh;
+    width:60%;
+    height:50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.subtitle span{
+     font-size: 12px;
+     color:#edf6f9;
+}
+.getstarted{
+    position:absolute;
+    bottom:10vh;
+    width:70%;
+    height:50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+.getstarted button{
+    width:80%;
+    height:50%;
+    padding:20px;
+    border:none;
+    outline:none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#006d77;
+    color:#edf6f9;
+    font-weight: bold;
+}
+/*==========================================
+           Splash Screen Ends Here
+===========================================*/
+.flex_full{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex_half{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*==========================================
+           Home Page Starts Here
+===========================================*/
+.home_header{
+  width:100%;
+  min-height:50px;
+}
+.home_header_left{
+    width:80%;
+    padding:10px;
+}
+.home_header_left h3{
+    color:#2d6a4f;
+    margin-bottom: 3px;
+}
+.home_header_left p{
+    font-size: 12px;
+    color:grey;
+}
+.home_header_right{
+    width:20%;
+}
+.home_header_right img{
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+}
+
+.homeSearch{
+    width:100%;
+    height:40px;
+    margin-top: 5px;
+    padding:2px 10px 2px;
+}
+.homeSearchSection{
+    width:80%;
+    padding:5px;
+    border-radius:5px;
+    background-color: #95d5b2;
+}
+.homeSearchSection input{
+    width:100%;
+    border:none;
+    padding:5px 10px;
+    outline:none;
+    background: transparent;
+    color:#081c15;
+}
+.homeSearchButton{
+    width:20%;
+    height:40px;
+    
+}
+.homeSearchButton img{
+    width:25px;
+    height:25px;
+}
+
+.homerecomend{
+    width:100%;
+    min-height: 10px;
+    padding:2px 10px;
+    margin-top: 15px;
+}
+.unit_title{
+    width:100%;
+    padding:2px 0px;
+}
+.unit_title p{
+    font-size: 15px;
+    font-weight: bold;
+    color:#2d6a4f;
+}
+.recomendation_unit{
+    width:100%;
+}
+.recomendation_card_unit{
+    width:100%;
+    min-height:200px;
+    padding:10px 5px;
+}
+.recomendation_card{
+    position: relative;
+    width:100%;
+    height:230px;
+}
+.recomendation_card img{
+    position: absolute;
+    left: 0px;
+    right:0px;
+    height:230px;
+    width:100%;
+    z-index:1;
+    border-radius:20px!important;
+}
+.dish_name{
+    position:absolute;
+    bottom:15px;
+    left:10%;
+    width:80%;
+    padding:10px 5px;
+    min-height:20px;
+    z-index: 4;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #fff;
+    background-color: rgba(0, 0, 0,0.7);
+}
+.dish_name p{
+    color:white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.homecuisine{
+    width:100%;
+    min-height: 100px;
+    padding:2px 10px;
+    margin-top: 0px;
+}
+.cuisine_container{
+    max-width:100%;
+    min-height:100px;
+    padding:5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.cuisine_unit{
+    padding:5px;
+    width:46%;
+    min-height:90px;
+    border-radius: 20px;
+    padding:5px 0px;
+    margin-bottom: 10px;
+}
+.cuisine_img{
+    width:100%;
+    height:80px;
+}
+.cuisine_img img{
+    height:60px;
+    width:60px;
+    border-radius: 50%;
+}
+.cuisine_name{
+    width:100%;
+    text-align: center;
+}
+.cuisine_name p{
+    font-size:12px ;
+    font-weight: bold;
+}
+.peach{
+    background-color: peachpuff;
+}
+.teal{
+    background-color: teal;
+}
+.pink{
+    background-color: lightpink;
+}
+
+
+.homenewreceipe{
+    width:100%;
+    min-height: 100px;
+    padding:2px 10px;
+    margin-top: 15px;
+    margin-bottom:65px;
+}
+.newreceipecontainer{
+    width:100%;
+    min-height: 80px;
+    padding:5px 0px;
+}
+.newreceipecard{
+    width:100%;
+    min-height: 80px;
+    border-radius: 20px;
+    padding:5px 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 5px grey;
+}
+.newreceipeleft{
+    width:60%;
+    padding:10px 0px;
+}
+.newreceiperight{
+    width:40%;
+    height: 70px;
+    position:relative;
+   
+}
+.new_receipe_title{
+    width:100%;
+    padding:3px 0px;
+}
+.new_receipe_title p{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: metropolis_bold;
+}
+.new_receipe_details{
+    width:100%;
+    padding:5px 0px;
+}
+.new_receipe_time{
+    width:50%;
+    padding:0px 5px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.new_receipe_time img{
+    width:8px;
+    height:8px;
+}
+.new_receipe_time p{
+    font-size: 8px;
+    color:grey;
+}
+.newreceiperight img{
+    height:70px;
+    width:70px;
+    border-radius: 50%;
+    position: absolute;
+    top:-25px;
+    left:12px;
+    
+
+}
+/*==========================================
+           Home Page Ends Here
+===========================================*/
+/*==========================================
+           Category Page starts Here
+===========================================*/
+.category_header{
+    width:100%;
+    height:50px;
+    text-align:center;
+    margin-bottom: 10px;
+}
+.category_header h3{
+    color:#2d6a4f;
+    margin-bottom: 3px;
+}
+.category_header p{
+    font-size: 12px;
+    color:grey;
+}
+/*==========================================
+           Category Page Ends Here
+===========================================*/
+/*==========================================
+           Search Page Starts Here
+===========================================*/
+/*==========================================
+           Search Page Ends Here
+===========================================*/
+/*==========================================
+           Receipe List Page starts Here
+===========================================*/
+.list_container{
+    margin-top: 10px;
+    width:100%;
+    min-width: 100px;
+    padding:10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+.list_card{
+    width:42%;
+    margin-bottom: 20px;
+}
+.list_image{
+    width:100%;
+    height:100px;
+}
+.list_image_long{
+    height:130px
+}
+.list_image img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+.list_title{
+    width:100%;
+    text-align: left;
+    margin-top: 12px;
+    padding:2px 5px;
+}
+.list_title p{
+    font-size: 12px;
+    font-weight: bold;
+    color:black;
+}
+.list_metadata{
+    width:100%;
+    padding:2px 5px;
+    height:20px;
+    margin-top: 8px;
+}
+.list_like{
+    width:85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+.list_like img{
+    width:13px;
+    height:13px;
+}
+.list_like p{
+    font-size: 14px;
+    color:grey;
+    margin-left: 5px;
+}
+.list_bookmark{
+    width:15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+.list_bookmark img{
+    width: 13px;
+    height:13px;
+}
+/*==========================================
+           Receipe List Page Ends Here
+===========================================*/
+/*==========================================
+           Receipe Page starts Here
+===========================================*/
+.receipe{
+    width:100%;
+    min-height:100px;
+    padding:0px 0px 10px;
+}
+.receipe_header{
+    width:100%;
+    height:50px;
+    
+}
+.receipe_back{
+    width:10%;
+    height:30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    
+}
+.receipe_back img{
+    width:15px;
+    height:15px;
+}
+.receipe_title{
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.receipe_title p{
+    font-size: 16px;
+    font-weight: bold;
+    color:#081c15;
+}
+.receipe_logo{
+  width:10%;
+}
+.receipe_logo img{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+}
+.receipe_image{
+    width:100%;
+    height:150px;
+    margin-top: 10px;
+}
+.receipe_image img{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+.ingredients_title{
+    width:100%;
+    height:50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    padding:0px 10px 10px;
+    margin-top: 10px;;
+}
+.ingredient_name{
+    width:60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+.ingredient_name p{
+    font-size:16px;
+    font-weight: bold;
+    font-family: metropolis_bold;
+    color:#081c15;
+}
+.serving{
+    width:40%;
+    height:30px;
+    border-radius: 20px;
+    background-color: #081c15;
+}
+.serving p{
+    color:white;
+    font-size: 12px;
+    font-weight: bold;
+}
+.ingredients{
+    width:100%;
+    min-height: 50px;
+    padding:10px 5px;
+}
+.ingredients_unit{
+    background-color: #95d5b2;
+    width:100%;
+    min-height: 20px;
+    padding:5px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.ingre_image{
+    width:15%;
+    min-height:20px;
+    padding:5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+.ingre_image img{
+    width:25px;
+    height:25px;
+    border-radius: 5px;
+}
+.ingre_name{
+    width:55%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: left;
+    align-items: center;
+}
+.ingre_name p{
+    font-size:12px;
+    font-weight: bold;
+    color:#081c15;
+}
+.ingre_quantity{
+    width:30%;
+
+}
+.ingre_quantity p{
+    font-size: 12px;
+}
+/*==========================================
+           Receipe Page Ends Here
+===========================================*/
+
+/*==========================================
+           Footer Section starts Here
+===========================================*/
+.footer{
+    position: fixed;
+    bottom:20px;
+    left:5%;
+    width:90%;
+    min-height:40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 15px;
+    border-radius: 20px;
+
+    background-color: #fff;
+    background-color: rgba(216, 243, 220,0.8);
+}
+.footer_unit{
+    width:30%;
+    padding:3px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footer_unit img{
+    height:15px;
+    width:15px;
+}
+.footer p{
+    font-size: 10px;
+    color:#95d5b2;
+}
+.footer_active{
+    border-bottom: 2px solid #2d6a4f;
+}
+.footer_active p{
+    font-size: 10px;
+    color:#2d6a4f;
+    font-weight:bold;
+}
+/*==========================================
+           Footer Section Ends Here
+===========================================*/
